@@ -1,0 +1,11 @@
+To be fixed:
+
+- any special movements bugs
+- un/highlighting King in check bugs
+- undo w/special mvmnts
+- change icon post pawn promotion
+
+Extra:
+
+- try another approach for GUI
+- backend duhhh
