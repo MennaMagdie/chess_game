@@ -24,7 +24,7 @@ public abstract class ChessGame implements Observable{
     }
 
 
-    // Constructor for deep copy of objects to handle the undo move
+    // Constructor for shallow copy of objects to handle the undo move
     protected ChessGame(ChessGame original) {
         this.board = new ChessBoard(original.board);
         this.gameStatus = original.gameStatus;
@@ -38,7 +38,7 @@ public abstract class ChessGame implements Observable{
         this.isPromotionMove = original.isPromotionMove;
     }
 
-    public ChessGame deepCopy() {
+    public ChessGame shallowCopy() {
         return new ClassicChessGame(this);
     }
 
